@@ -1,0 +1,646 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+}
+.mainCont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.timerContClass {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 50vh;
+  width: 49%;
+
+  background-color: #e5edff;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+@media only screen and (max-width: 900px) {
+  .timerContClass {
+    width: 100%;
+  }
+}
+
+.timerContClass h2 {
+  margin-top: 0.5rem;
+  width: 90%;
+  color: #001d35;
+}
+
+.timerbtnCont {
+  min-width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timerbtn {
+  margin: 0.25rem 0rem 0rem 0rem;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: #e5edff;
+
+  border-radius: 1.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  width: 115px;
+  color: #000;
+}
+.timerbtn:hover {
+  background-color: #7788996f;
+  transition: background-color 0.5s ease;
+}
+
+.timerbtn i {
+  margin: 0rem 0.5rem 0rem 0rem;
+  color: #0b57d0;
+}
+
+.timerRight {
+  width: 100%;
+}
+.timerSpk,
+.timerZoom {
+  color: #0b57d0;
+  margin-left: 1.5rem;
+  float: right;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.timerSpk:hover {
+  background-color: #c7dbff;
+  transition: background-color 0.5s ease;
+}
+.timerZoom:hover {
+  background-color: #c7dbff;
+  transition: background-color 0.5s ease;
+}
+
+.displayCont1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timerDisplay {
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+
+.underLine {
+  width: 150px;
+  color: #a3c9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.1rem solid;
+  margin-top: 0.25rem;
+}
+
+.timerCetgoriesCont {
+  width: 95%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus30Sec,
+.plus1Min,
+.plus5Mins {
+  margin-top: 1rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  border: none;
+  outline: none;
+  width: 75px;
+  font-size: 0.9rem;
+  background-color: #c7dbff;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: #001d35;
+  font-weight: 500;
+  text-align: center;
+}
+.plus30Sec:hover,
+.plus1Min:hover,
+.plus5Mins:hover {
+  background-color: #d8dbff;
+}
+
+.timerBtn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+
+  width: 95%;
+}
+
+.startTimer {
+  width: 100%;
+  background-color: #0b57d0;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.timerBtn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin-bottom: 0.5rem;
+}
+
+.stopTimer {
+  width: 99%;
+  background-color: #c7dbff;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: #001d35;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0rem 0.15rem 0rem 0rem;
+  display: none;
+}
+.stopTimer:hover {
+  background-color: #d8dbff;
+  transition: background-color 0.5s ease;
+}
+.resetTimer {
+  width: 99%;
+  background-color: #c7dbff;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: #001d35;
+  font-size: 1rem;
+  cursor: pointer;
+
+  display: none;
+}
+.resetTimer:hover {
+  background-color: #d8dbff;
+  transition: background-color 0.5s ease;
+}
+
+/* New class Added */
+
+.newTimerContClass {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  width: 49%;
+  height: 50vh;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  background-color: #ffeed9;
+  transition: all 0.3s ease;
+}
+
+.newTimerContClass h2 {
+  color: #5f4100;
+  width: 90%;
+  margin-top: 0.5rem;
+}
+@media only screen and (max-width: 900px) {
+  .newTimerContClass {
+    width: 100%;
+  }
+}
+.newTimerBtnClass {
+  background-color: #ffcd6c;
+  color: #5f4100;
+  margin: 0.25rem 0rem 0rem 0rem;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+
+  border-radius: 1.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  width: 115px;
+}
+.newTimerBtnClass:hover {
+  background-color: #f4b96bca;
+  transition: background-color 0.3s ease;
+}
+.newTimerBtnClass i {
+  margin: 0rem 0.5rem 0rem 0rem;
+  color: #000;
+}
+
+/* //Icon newClass */
+
+.newSpkZoomClass {
+  color: #5f4100;
+  margin-left: 1.5rem;
+  float: inline-end;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.newSpkZoomClass:hover {
+  background-color: #f4b96bca;
+  transition: background-color 0.3s ease;
+}
+.fullscreen-timer {
+  min-width: 80vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  overflow: auto;
+}
+
+.newClassTimerDisplay {
+  font-size: 4rem;
+  margin-top: 2rem;
+  color: #000;
+}
+
+.newUnderLineClass {
+  color: #d1a76f;
+  width: 150px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.1rem solid;
+  margin-top: 0.25rem;
+}
+
+.newClassPlusbtns {
+  background-color: #f0e0cb;
+  color: #000;
+  margin-top: 1rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  border: none;
+  outline: none;
+  width: 75px;
+  font-size: 0.9rem;
+  text-align: center;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.newClassPlusbtns:hover {
+  background-color: #c09f748c;
+  transition: background-color 0.3s ease;
+}
+.newStartTimer {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: #000;
+  background-color: #ffcd6c;
+  font-size: 1rem;
+  display: none;
+  width: 99%;
+  cursor: pointer;
+  margin: 0rem 0.15rem 0rem 0rem;
+  transition: all 0.3s ease;
+}
+.newStartTimer:hover {
+  background-color: #f4b96bca;
+}
+
+.newPlayBtnClass button {
+  background-color: #ffcd6c;
+  color: #000;
+}
+.newPlayBtnClass button:hover {
+  background-color: #f4b96bca;
+  transition: background-color 0.3s ease;
+}
+
+.newClassResetTimer {
+  width: 99%;
+
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: #000;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: none;
+  background-color: #ffcd6c;
+}
+
+.newClassResetTimer:hover {
+  background-color: #f4b96bca;
+}
+
+/*  This is stopwatch code */
+
+.stopwchCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 49%;
+  height: 50vh;
+  background-color: #e5edff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .stopwchCont {
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+.stopwchCont h2 {
+  margin-top: 0.5rem;
+  width: 90%;
+  color: #001d35;
+}
+.stopwchBtnCont {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stopwchBtn {
+  margin: 0.25rem 0rem 0rem 0rem;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: #e5edff;
+  transition: background-color 0.3s ease;
+  border-radius: 1.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  width: 195px;
+  color: #000;
+}
+.stopwchBtn:hover {
+  background-color: #7788996f;
+}
+.stopwchBtn i {
+  margin: 0rem 0.5rem 0rem 0rem;
+  color: #0b57d0;
+}
+.stopwchRight {
+  width: 100%;
+}
+.stopwchSpk,
+.stopwchZoom {
+  color: #0b57d0;
+  margin-left: 1.5rem;
+  float: right;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+.stopwchSpk:hover {
+  background-color: #c7dbff;
+}
+.stopwchZoom:hover {
+  background-color: #c7dbff;
+}
+.stopwchDisplay {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.stopwch {
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+.underline {
+  width: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 0.25rem;
+}
+.mixBtn {
+  width: 95%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stopwchBtn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+
+  width: 95%;
+}
+.startStopwch {
+  width: 100%;
+  background-color: #0b57d0;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+.stopwchBtn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+
+.stopStopwch {
+  width: 100%;
+  background-color: #c7dbff;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: #000;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0rem 0.15rem 0rem 0rem;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s ease;
+  display: none;
+}
+.stopStopwch:hover {
+  background-color: #d8dbff;
+}
+
+.resetStopwch {
+  width: 100%;
+  background-color: #c7dbff;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: #000;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  display: none;
+  transition: background-color 0.3s ease;
+}
+.resetStopwch:hover {
+  background-color: #d8dbff;
+}
+
+/* add New Classes */
+
+.newClassStopwchCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 49%;
+  height: 50vh;
+  background-color: #ffeed9;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+@media only screen and (max-width: 900px) {
+  .newClassStopwchCont {
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+.newClassStopwchCont h2 {
+  margin-top: 0.5rem;
+  width: 90%;
+  color: #5f4100;
+}
+
+.newClassStopwchBtn {
+  margin: 0.25rem 0rem 0rem 0rem;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: #ffcd6c;
+  border-radius: 1.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  width: 195px;
+  color: #5f4100;
+  transition: background-color 0.3s ease;
+}
+.newClassStopwchBtn:hover {
+  background-color: #f4b96bca;
+}
+
+.newClassStopwchBtn i {
+  margin: 0rem 0.5rem 0rem 0rem;
+  color: #000;
+}
+
+.newStopwchSpk,
+.newStopwchZoom {
+  color: #5f4100;
+  margin-left: 1.5rem;
+  float: inline-end;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+.newStopwchSpk:hover {
+  background-color: #f4b96bca;
+}
+.newStopwchZoom:hover {
+  background-color: #f4b96bca;
+}
+
+.newClassStopwch {
+  font-size: 4rem;
+  margin-top: 2rem;
+  color: #000;
+}
+.newClassPlayBtnStopwch {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: #000;
+  background-color: #ffcd6c;
+  font-size: 1rem;
+  display: none;
+  width: 99%;
+  cursor: pointer;
+  margin: 0rem 0.15rem 0rem 0rem;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+.newClassPlayBtnStopwch:hover {
+  background-color: #f4b96bca;
+}
+
+.newClassResetStopwch {
+  width: 100%;
+  background-color: #ffcd6c;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: #000;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  display: none;
+  transition: background-color 0.3s ease;
+}
+.newClassResetStopwch:hover {
+  background-color: #f4b96bca;
+}
+.fullscreen-stopwatch {
+  min-width: 80vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  overflow: auto;
+}

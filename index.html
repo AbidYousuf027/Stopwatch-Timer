@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer StopWatch</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div id="mainContDiv" class="mainCont">
+
+        <div id="timerCont" class="timerContClass"> 
+            <h2>Timer </h2>
+            <div class="timerbtnCont">
+                <button id="timerBtn" class="timerbtn ">
+                    <i class="fa-solid fa-hourglass"></i> Timer</button>
+                   
+                <div class="timerRight">
+                    <audio id="timerSound" src="./alaram/alaramSound.mp3" preload="auto"></audio>
+
+                    <i class="fa-solid fa-expand timerZoom"></i>
+                    <i class="fa-solid fa-volume-high timerSpk"></i>
+                </div>
+
+            </div>
+            <div id="timerCont" class="displayCont1">
+                <div class="timerDisplay"></div>
+                <div id="underLineDiv" class="underLine"></div>
+                <div  id="btnCont" class="timerCetgoriesCont">
+                    <button id="plus30Sec" class="plus30Sec "></button>
+                    <button id="plus1Min" class="plus1Min "></button>
+                    <button id="plus5Mins" class="plus5Mins "></button>
+                </div>
+                <div class="timerBtn1">
+                    <button id="playTimer" class="startTimer"><i class="fa-solid fa-play"></i></button>
+
+                </div>
+                <div class="timerBtn2 ">
+                    <button id="newPlayTimer" class="startTimer"><i class="fa-solid fa-play"></i></button>
+                    <button id="stopTimer" class="stopTimer"><i class="fa-solid fa-pause"></i></button>
+                    <button id="resetTimer" class="resetTimer "><i class="fa-solid fa-rotate-left"></i></button>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    <!-- Stopwatch Code starting -->
+       
+        <div id="stopwchContDiv" class="stopwchCont">
+            <h2> Stopwatch</h2>
+            <div class="stopwchBtnCont">
+                <button id="stopwchBtn" class="stopwchBtn">
+                    <i class="fa-sharp-duotone fa-solid fa-clock"></i> Stopwatch</button>
+
+                
+             
+                  
+                <div class="stopwchRight">
+                    <audio id="stopwatch-Sound" src="./alaram/alaramSound.mp3" preload="auto"></audio>
+                    <i class="fa-solid fa-expand stopwchZoom"></i>
+                    <i class="fa-solid fa-volume-high stopwchSpk"></i>
+                </div>
+
+            </div>
+
+
+
+            <div class="stopwchDisplay">
+                <div id="stopwchDisplay" class="stopwch"></div>
+                <div class="underline"></div>
+                <div class="mixBtn"></div>
+
+                <div class="stopwchBtn1">
+                    <button id="playBtnStopwch" class="startStopwch"><i class="fa-solid fa-play"></i></button>
+                </div>
+                <div class="stopwchBtn2">
+                    <button id="newPlayBtnStopwch" class="startStopwch "><i class="fa-solid fa-play"></i></button>
+                    <button id="stopBtnStopwch" class="stopStopwch "><i class="fa-solid fa-pause"></i></button>
+                    <button id="resetBtnStopwch" class="resetStopwch"><i class="fa-solid fa-rotate-left"></i></button>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
